@@ -14,7 +14,7 @@
 %-----
 %Befehle
 
-\KOMAoptions{foldmarks=true, parskip=half, footsepline=true, }
+\KOMAoptions{foldmarks=false, parskip=half, footsepline=true, }
 
 \renewcaptionname{ngerman}{\enclname}{Anhang}
 
@@ -24,10 +24,10 @@
 %Absenderinfos
 
 \setkomavar{fromname}{Jan Hoegen}
-\setkomavar{fromaddress}{Im Riegel 100\\69190 Walldorf}
-\setkomavar{fromphone}{06227\,840738}
-\setkomavar{frommobilephone}{0176\,72113806}
-\setkomavar{fromemail}{jan.hoegen@web.de}
+% \setkomavar{fromaddress}{Im Riegel 100\\69190 Walldorf}
+% \setkomavar{fromphone}{06227\,840738}
+% \setkomavar{frommobilephone}{0176\,72113806}
+% \setkomavar{fromemail}{jan.hoegen@web.de}
 
 %-----
 %Header

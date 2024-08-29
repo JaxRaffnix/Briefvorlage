@@ -1,32 +1,45 @@
-\documentclass[Absender, version=last]{scrlttr2}
+\documentclass[
+    % 10pt, 
+    a4paper,
+    version=last,
+    % DIV=15,
+    ]{scrlttr2}
 
 %----------------------------------------------------------------------------------------
 %	Pakete
 %----------------------------------------------------------------------------------------
 
+\usepackage{palatino}
+
+\usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel}
-\usepackage[T1]{fontenc}
+\usepackage{microtype}
 
 %----------------------------------------------------------------------------------------
 %	Befehle
 %----------------------------------------------------------------------------------------
 
+\LoadLetterOption{DIN}
+
 \KOMAoptions{
-	paper=a4,
-	fontsize=12pt
+    parskip=half,
+    foldmarks=false,
+    backaddress=false,      % keine Absenderadresse
+}
+\raggedright
+\pagestyle{empty}
+
+\KOMAoption{subject}{centered}
+
+\setkomavar{firsthead}{%
+	\centerline{\Huge Jan Hoegen}\\
+	\rule[1ex]{\textwidth}{0.5pt}
 }
 
-\hypersetup{
-	%pdftitle= \textbar{} Jan Hoegen,
-	pdfauthor=Jan Hoegen, 
-	%pdfsubject=
-}
+% \renewcommand*{\raggedsignature}{\raggedright}      %Grußformel nicht einrücken
 
-\setkomavar{signature}{
-	\\
-	\vspace{-3em}
-	\includegraphics[width=0.35\textwidth]{Signatur.png}}
+\setkomavar{signature}{}
 
 %----------------------------------------------------------------------------------------
 %	Oberes Drittel
@@ -35,45 +48,38 @@
 \begin{document}
 
 \begin{letter}{%
-	Stadt Walldorf\\
-	Postfach 105520\\
-	69045 Heidelberg
+	Abteilung Krankentransport \\
+	DRK Karlsruhe \\
+	Augustenburgstr. 98a \\
+	76229 Karlsruhe \\
+	% \mbox{}
 }
 
-\setkomavar{place}{Walldorf}
-
+\setkomavar{place}{Karlsruhes}
 \setkomavar{date}{\today}
-
-\setkomavar{myref}{505}
-
-%\setkomavar{title}{Corona-Verordnung Sportstätten}
-
-\setkomavar{subject}{Abgabe des Führerscheins}
-
-%\setkomavar{firstfoot}{Dies ist die erste Fußzeile}
+\setkomavar{subject}{Ein Abschied}
 
 %----------------------------------------------------------------------------------------
 %	Text
 %----------------------------------------------------------------------------------------
 
-\opening{Sehr geehrte Damen und Herren,}
+\opening{Liebe Kolleginnen und Kollegen,\\
+		liebe Vorgesetzte,}
 
-hiermit reiche ich meinen Führerschein bei Ihnen ein. 
-hiermit reiche ich Ihnen den \textit{Nachweis über die Teilnahme an einem Studienorientierungsverfahren} nach. Dieser wurde auf der Website \texttt{was-studiere-ich.de} durchgeführt.\par
-Meine Bewerbernummer lautet: \textbf{6.604.434}
+	Ein Abschied kann auf verschiedene Weisen kommen -- manchmal überraschend, manchmal erwartet. Doch unabhängig davon fällt er niemals leicht.
+
+	Ich möchte mich bei euch allen für die wunderbare Zeit bedanken. Die gemeinsamen Erlebnisse, Herausforderungen und Erfolge werden mir noch lange in guter Erinnerung bleiben. 
+	Ihr seid ein tolles, starkes Team und es hat mir sehr viel Freude gemacht, mit euch zusammenzuarbeiten.
+
+	Ein besonderer Dank geht an meine Vorgesetzten. Eure Unterstützung und das Vertrauen hat meine Zeit hier besonders bereichert und mir geholfen, mich weiterzuentwickeln.
+
+	Ich wünsche euch allen von Herzen viel Erfolg, Gesundheit und Zufriedenheit für die Zukunft. Ich freue mich bereits, euch am Grillfest erneut zu sehen.
 
 %----------------------------------------------------------------------------------------
 %	Unteres Drittel
 %----------------------------------------------------------------------------------------
 
-\closing{Mit freundlichen Grüßen,}
-
-%\ps PS: Noch einen schönen Abend.
-
-\encl{Teilnahmezertifikat \texttt{was-studiere-ich.de}}
-
-%\cc{Ich}
-
+\closing{Noch eine traumhafte Zeit,}
 
 %----------------------------------------------------------------------------------------
 %	Ende
